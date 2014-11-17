@@ -6,5 +6,5 @@
 
 <div class="well">
 
-  <em><%= @toy.cat.name %></em>   
+  <em><%= link_to @toy.cat.name, cat_path(@toy.cat) %></em>   
 </div>
