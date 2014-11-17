@@ -10,13 +10,13 @@
     </tr>
   </thead>
   <tbody>
-    <% @toy.each do |toy| %>
+    <% @toys.each do |toy| %>
       <tr>
         <td>
           <%= link_to toy.name, toy_path(toy) %>
         </td>
         <td>
-          <em><%= toy.cat.name%></em>
+          <em><%= link_to toy.cat.name, toy_path(toy)%></em>
         </td>
       </tr>
     <% end %>
